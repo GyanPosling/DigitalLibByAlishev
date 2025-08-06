@@ -25,8 +25,8 @@ public class Person {
     @Column(name = "year_of_birth")
     private int yearOfBirth;
 
-    @NotEmpty(message = "Email не должен быть пустым")
-    @Size(min = 2, max = 100, message = "Email должен быть от 2 до 100 символов длиной")
+
+
     private String email;
 
     @OneToMany(mappedBy = "owner")
