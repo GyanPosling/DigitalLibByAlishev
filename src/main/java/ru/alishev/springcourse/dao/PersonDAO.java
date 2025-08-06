@@ -26,7 +26,7 @@ public class PersonDAO {
     }
 
     public Person show(int id){
-        Session session = sessionFactory.getCurrentSession();
+        Session session = sessionFactory.getCurrentSession();//werwerwer
         Person person = session.get(Person.class, id);
         return person;
     }
